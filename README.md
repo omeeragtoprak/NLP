@@ -11,12 +11,26 @@ Amaç, metinlerin makine öğrenmesi modelleriyle sayısal olarak temsil edilmes
 
 **Örnek Satır**:
 ```
-Apply to 06_similarit...
+  text,split,model,strategy,use_source_text,prompt_id,generated
+  In conclusion, limiting car usage has many advantages even if you dont realize it and our soiciety could benefit a lot from it. Like, when it comes to the safety of the next generation, the present, or the previous. Than, it can even take away stress that come with a vechicle and even increase health and social gathering.,train,student,n/a,true,0,0
 ```
 
 ## 3. Proje Klasör Yapısı
 ```
-Apply to 06_similarit...
+proje/
+│
+├── nlp.ipynb                  # Tüm adımların işlendiği Jupyter Notebook
+├── requirements.txt           # Gerekli kütüphaneler
+├── data/
+│   ├── ai_detect_essays_filtered.csv
+│   ├── essays_lemmatized.csv
+│   ├── essays_stemmed.csv
+│   ├── tfidf_lemmatized.csv
+│   ├── tfidf_stemmed.csv
+│   └── ... (diğer çıktı dosyaları)
+├── models/
+│   └── ... (Word2Vec model dosyaları, boyut nedeniyle yüklenemeyebilir)
+└── README.md
 ```
 
 ## 4. Kurulum ve Gerekli Kütüphaneler
