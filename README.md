@@ -27,9 +27,9 @@ proje/
 │   ├── essays_stemmed.csv
 │   ├── tfidf_lemmatized.csv
 │   ├── tfidf_stemmed.csv
-│   └── ... (diğer çıktı dosyaları)
+│   └── ... https://drive.google.com/drive/folders/10vPwsgcacFMYNZz6FNohfnyNWizW1dQL?usp=sharing
 ├── models/
-│   └── ... (Word2Vec model dosyaları, boyut nedeniyle yüklenemeyebilir)
+│   └── ... https://drive.google.com/drive/folders/1KGV3o6-FJ1Q9iJWmRpHdOfZo98AqdTLD?usp=sharing
 └── README.md
 ```
 
@@ -77,7 +77,8 @@ pip install pandas numpy nltk gensim scikit-learn matplotlib seaborn
 ### 5. Word2Vec Model Testi
 - Mevcut modellerden (örneğin `lemmatized_model_cbow_window2_dim100.model`) seçilen bir kelime için en benzer 5 kelime yazdırılır.
 
-**Not**: Model dosyaları boyut nedeniyle repoya eklenmemiştir, sadece test kodu paylaşılmıştır.
+**Not**: Model dosyaları boyut nedeniyle repoya eklenmemiştir, drive linki eklenmiştir.
+https://drive.google.com/drive/folders/1KGV3o6-FJ1Q9iJWmRpHdOfZo98AqdTLD?usp=sharing
 
 ### 6. Benzerlik Analizi
 - Cosine similarity matrisleri ve benzerlik dağılımı grafikleri oluşturulur.
