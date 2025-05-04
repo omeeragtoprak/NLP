@@ -47,10 +47,10 @@ Aşağıdaki Python kütüphaneleri gereklidir:
 
 ### Kurulum:
 ```bash
-git clone 
+git clone https://github.com/omeeragtoprak/NLP.git
 ```
 ```bash
-pip install pandas numpy nltk gensim scikit-learn matplotlib seaborn
+pip install requiremenst.txt
 ```
 
 ## 5. Adım Adım Kullanım
