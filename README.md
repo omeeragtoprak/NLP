@@ -92,7 +92,7 @@ https://drive.google.com/drive/folders/1KGV3o6-FJ1Q9iJWmRpHdOfZo98AqdTLD?usp=sha
 
 - Word2Vec model dosyaları (`.model`) boyut nedeniyle GitHub’a yüklenmemiştir.
 - Modelleri yeniden üretmek için preprocessing ve model eğitim kodları kullanılabilir.
-- Model test kodları (örneğin `05_word2vec_training.py`) ile örnek kelime benzerlikleri alınabilir.
+- Model test kodları (örneğin `word2vec_training`) ile örnek kelime benzerlikleri alınabilir.
 
 ## 7. Veri Setinin Kullanım Amacı
 
