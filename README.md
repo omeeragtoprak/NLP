@@ -73,6 +73,7 @@ pip install pandas numpy nltk gensim scikit-learn matplotlib seaborn
 **Çıktılar**:
 - `tfidf_lemmatized.csv`
 - `tfidf_stemmed.csv`
+- Çıktıların linki= https://drive.google.com/drive/folders/10vPwsgcacFMYNZz6FNohfnyNWizW1dQL?usp=sharing
 
 ### 5. Word2Vec Model Testi
 - Mevcut modellerden (örneğin `lemmatized_model_cbow_window2_dim100.model`) seçilen bir kelime için en benzer 5 kelime yazdırılır.
