@@ -5,7 +5,7 @@ Bu projede, seçilen metin tabanlı bir veri seti üzerinde doğal dil işleme (
 Amaç, metinlerin makine öğrenmesi modelleriyle sayısal olarak temsil edilmesi ve benzerliklerinin ölçülmesidir.
 
 ## 2. Kullanılan Veri Seti
-- **Kaynak**: [AI Detection Student Writing (GitHub)](https://github.com)  
+- **Kaynak**: https://github.com/scrosseye/AI-Detection-Student-Writing
 - **Boyut**: 1 dosya, CSV formatında, 22.1 MB  
 - **Açıklama**: Her satır bir öğrenci ödevini temsil eder.
 
