@@ -47,6 +47,9 @@ Aşağıdaki Python kütüphaneleri gereklidir:
 
 ### Kurulum:
 ```bash
+git clone 
+```
+```bash
 pip install pandas numpy nltk gensim scikit-learn matplotlib seaborn
 ```
 
