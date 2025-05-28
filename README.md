@@ -104,6 +104,56 @@ https://drive.google.com/drive/folders/1KGV3o6-FJ1Q9iJWmRpHdOfZo98AqdTLD?usp=sha
 - Doğal dil işleme uygulamaları
 
 Proje kapsamında metinlerin temizlenmesi, vektörleştirilmesi ve benzerliklerinin ölçülmesi örneklenmiştir.
+# NLP Ödev 2: Metin Benzerliği Analizi – TF-IDF ve Word2Vec Karşılaştırması
+
+## Proje Amacı
+Bu projenin amacı, ön işlenmiş metin veri setleri kullanılarak TF-IDF ve Word2Vec tabanlı modeller ile metinler arası benzerlik hesaplamaları yapmak ve bu iki farklı yaklaşımı başarı ve tutarlılık açısından karşılaştırmaktır.
+
+## Kullanılan Veri Setleri
+Tüm veriler, bir önceki ödevde (Ödev-1) ön işleme tabi tutulmuş ve aşağıdaki CSV dosyaları olarak kaydedilmiştir:
+
+- `lemmatized.csv`: Lemmatize edilmiş metinler  
+- `stemmed.csv`: Stem uygulanmış metinler  
+- `ai_detect_essays_filtered.csv`: AI ve öğrenci etiketli makaleler  
+
+### Kaynak
+- Dataset: [AI-Detection-Student-Writing](https://github.com/scrosseye/AI-Detection-Student-Writing)
+
+## 🧪 Uygulanan Yöntemler
+
+### TF-IDF
+- **Araç**: `TfidfVectorizer` (scikit-learn)
+- Her metin TF-IDF vektörü ile temsil edilmiştir.
+- Cosine similarity ile giriş metnine benzer metinler sıralanmıştır.
+- Hem lemmatized hem stemmed versiyonlar için ayrı ayrı uygulanmıştır.
+
+### Word2Vec
+- **Araç**: `gensim.models.Word2Vec`
+- 16 farklı model eğitilmiştir (CBOW/SkipGram, window=2/4, dim=100/300, lemmatized/stemmed).
+- Her metin, içerisindeki kelime vektörlerinin ortalaması ile temsil edilmiştir.
+- Cosine similarity ile benzerlikler hesaplanmıştır.
+
+## Sonuçlar ve Değerlendirme
+
+### En Başarılı Yapılandırmalar
+- `tfidf_lemmatized` ve `tfidf_stemmed`: Ortalama Subjective skor = **4.6**
+- `cbow_window2_dim100` (lemmatized/stemmed): Ortalama Subjective skor = **4.6**
+
+### Düşük Başarılı Modeller
+- `cbow_window2_dim300` ve `skipgram_window2_dim300`: Ortalama Subjective skor = **4.4**
+
+### Sıralama Tutarlılığı (Jaccard)
+- TF-IDF modelleri arasında Jaccard skoru ≈ **0.43**
+- Word2Vec modelleri arasında skorlar **0.25–0.66** aralığında değişmektedir.
+- Aynı yapılandırmaya sahip Word2Vec modelleri (sadece boyut farkı) daha tutarlı sonuçlar üretmiştir.
+
+## Önerilen Kullanım Senaryoları
+| Senaryo | Önerilen Model |
+|---------|----------------|
+| Kısa ve doğrudan metinler | `TF-IDF` |
+| Bağlamı zengin, uzun metinler | `Word2Vec` |
+| En stabil sonuçlar için | `CBOW`, `window=2`, `dim=100` |
+
 
 ## 8. Ek Bilgiler
 
